@@ -3,12 +3,12 @@ import java.util.Scanner;
  * Created by buddhimah on 10/16/2017.
  */
 public class Factorial {
-    public static  int fac(int number){
+    public static  int fact(int number){
         int r;
         if(number == 1){
             return 1;
         }
-        r = fac(number - 1)*number;
+        r = fact(number - 1)*number;
         return r;
    }
     public static void main(String args[]){
@@ -20,7 +20,7 @@ public class Factorial {
             System.out.println(a.getMessage());
             Factorial.main(new String[1]);
         }else {
-            System.out.println(fac(num));
+            System.out.println(fact(num));
         }
     }
 }
